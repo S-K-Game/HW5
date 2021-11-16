@@ -13,6 +13,7 @@ public class TimedSpawnerRandom : MonoBehaviour
     [Tooltip("Maximum time between consecutive spawns, in seconds")] [SerializeField] float maxTimeBetweenSpawns;
     [Tooltip("Maximum distance in X between spawner and spawned objects, in meters")] [SerializeField] float maxXDistance;
     [Tooltip("Maximum distance in Y between spawner and spawned objects, in meters")] [SerializeField] float maxYDistance;
+    private int zPos=-1;
 
     void Start()
     {
@@ -28,7 +29,7 @@ public class TimedSpawnerRandom : MonoBehaviour
             Vector3 positionOfSpawnedObject = new Vector3(
                 transform.position.x + Random.Range(-maxXDistance, +maxXDistance),
                 transform.position.y + Random.Range(-maxYDistance, +maxYDistance),
-                transform.position.z);
+                zPos);
 
                 if(timeBetweenSpawns < (minTimeBetweenSpawns + maxTimeBetweenSpawns)/2){
                     GameObject newObject = Instantiate(prefabToSpawn1.gameObject, positionOfSpawnedObject, Quaternion.identity);
