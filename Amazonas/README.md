@@ -1,4 +1,5 @@
 
+
 <div dir="rtl" lang="he">
 
 # Amazonas
@@ -14,6 +15,6 @@
 [**לחץ כאן על מנת לעבור למשחק**](https://s-k-games.itch.io/amazonas) 
 
 
-
+![](https://github.com/S-K-Game/HW5/blob/master/Amazonas/Assets/images/Game.png)
 
 </div>
